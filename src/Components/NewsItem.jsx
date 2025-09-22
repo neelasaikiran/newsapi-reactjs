@@ -14,12 +14,12 @@ const NewsItem = ({ title, description, src, url }) => {
         alt={title || "News thumbnail"}
       />
       <div className="card-body">
-        <h5 className="card-title">
+        <h3 className="card-title">
           {title ? title.slice(0,50) : "Untitled"}
-        </h5>
-        <p className="card-text">
+        </h3>
+        <h5 className="card-text">
           {description ? description.slice(0, 80) : "No description available."}
-        </p>
+        </h5>
         <a
           href={url}
           target="_blank"
