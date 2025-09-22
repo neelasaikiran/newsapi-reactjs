@@ -8,10 +8,9 @@ const NewsItem = ({ title, description, src, url }) => {
       style={{ maxWidth: "345px" }}
     >
       <img
-        src={src ? src : image}
+        src={src?src:image }
         className="card-img-top"
         style={{ height: "200px", objectFit: "cover" }}
-        alt={title || "News thumbnail"}
       />
       <div className="card-body">
         <h3 className="card-title">
